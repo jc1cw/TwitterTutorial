@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F682574E043001ADFA6 /* AppDelegate.swift */; };
 		EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */; };
-		EAE89F6D2574E043001ADFA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F6C2574E043001ADFA6 /* ViewController.swift */; };
 		EAE89F702574E043001ADFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F6E2574E043001ADFA6 /* Main.storyboard */; };
 		EAE89F722574E044001ADFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F712574E044001ADFA6 /* Assets.xcassets */; };
 		EAE89F752574E044001ADFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F732574E044001ADFA6 /* LaunchScreen.storyboard */; };
+		EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F862574E52D001ADFA6 /* MainTabController.swift */; };
+		EAE89F8A2576123C001ADFA6 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F892576123C001ADFA6 /* FeedController.swift */; };
+		EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F8C257612BD001ADFA6 /* ExploreController.swift */; };
+		EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */; };
+		EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F92257612EF001ADFA6 /* ConversationsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAE89F652574E043001ADFA6 /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE89F682574E043001ADFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAE89F6C2574E043001ADFA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAE89F6F2574E043001ADFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAE89F712574E044001ADFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE89F742574E044001ADFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAE89F762574E044001ADFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE89F862574E52D001ADFA6 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		EAE89F892576123C001ADFA6 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		EAE89F8C257612BD001ADFA6 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		EAE89F92257612EF001ADFA6 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		EAE89F672574E043001ADFA6 /* TwitterTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				EAE89F832574E26B001ADFA6 /* Model */,
+				EAE89F822574E245001ADFA6 /* View */,
+				EAE89F812574E241001ADFA6 /* ViewModel */,
+				EAE89F802574E23E001ADFA6 /* Controller */,
+				EAE89F7E2574E230001ADFA6 /* API */,
+				EAE89F7D2574E20C001ADFA6 /* Utils */,
 				EAE89F682574E043001ADFA6 /* AppDelegate.swift */,
 				EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */,
-				EAE89F6C2574E043001ADFA6 /* ViewController.swift */,
 				EAE89F6E2574E043001ADFA6 /* Main.storyboard */,
 				EAE89F712574E044001ADFA6 /* Assets.xcassets */,
 				EAE89F732574E044001ADFA6 /* LaunchScreen.storyboard */,
 				EAE89F762574E044001ADFA6 /* Info.plist */,
 			);
 			path = TwitterTutorial;
+			sourceTree = "<group>";
+		};
+		EAE89F7D2574E20C001ADFA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAE89F7E2574E230001ADFA6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EAE89F802574E23E001ADFA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAE89F862574E52D001ADFA6 /* MainTabController.swift */,
+				EAE89F892576123C001ADFA6 /* FeedController.swift */,
+				EAE89F8C257612BD001ADFA6 /* ExploreController.swift */,
+				EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */,
+				EAE89F92257612EF001ADFA6 /* ConversationsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EAE89F812574E241001ADFA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EAE89F822574E245001ADFA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EAE89F832574E26B001ADFA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAE89F6D2574E043001ADFA6 /* ViewController.swift in Sources */,
+				EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */,
+				EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
+				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
+				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
+				EAE89F8A2576123C001ADFA6 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
