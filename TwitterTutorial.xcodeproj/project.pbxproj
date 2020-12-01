@@ -17,6 +17,7 @@
 		EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F8C257612BD001ADFA6 /* ExploreController.swift */; };
 		EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */; };
 		EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F92257612EF001ADFA6 /* ConversationsController.swift */; };
+		EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9525762393001ADFA6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EAE89F8C257612BD001ADFA6 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		EAE89F92257612EF001ADFA6 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		EAE89F9525762393001ADFA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		EAE89F7D2574E20C001ADFA6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EAE89F9525762393001ADFA6 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */,
 				EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
+				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
 				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
