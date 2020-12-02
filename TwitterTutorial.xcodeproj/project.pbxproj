@@ -18,6 +18,9 @@
 		EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */; };
 		EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F92257612EF001ADFA6 /* ConversationsController.swift */; };
 		EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9525762393001ADFA6 /* Extensions.swift */; };
+		EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9925775494001ADFA6 /* LoginController.swift */; };
+		EAE89F9E2577557C001ADFA6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9D2577557C001ADFA6 /* RegistrationController.swift */; };
+		EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89FA225776194001ADFA6 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		EAE89F92257612EF001ADFA6 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
 		EAE89F9525762393001ADFA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EAE89F9925775494001ADFA6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		EAE89F9D2577557C001ADFA6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		EAE89FA225776194001ADFA6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE89F9525762393001ADFA6 /* Extensions.swift */,
+				EAE89FA225776194001ADFA6 /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 		EAE89F802574E23E001ADFA6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EAE89F9825775475001ADFA6 /* Authentication */,
 				EAE89F862574E52D001ADFA6 /* MainTabController.swift */,
 				EAE89F892576123C001ADFA6 /* FeedController.swift */,
 				EAE89F8C257612BD001ADFA6 /* ExploreController.swift */,
@@ -128,6 +136,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EAE89F9825775475001ADFA6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EAE89F9925775494001ADFA6 /* LoginController.swift */,
+				EAE89F9D2577557C001ADFA6 /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +219,14 @@
 			files = (
 				EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */,
 				EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */,
+				EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
 				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
+				EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */,
+				EAE89F9E2577557C001ADFA6 /* RegistrationController.swift in Sources */,
 				EAE89F8A2576123C001ADFA6 /* FeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
