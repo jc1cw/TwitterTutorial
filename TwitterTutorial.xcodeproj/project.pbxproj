@@ -10,6 +10,7 @@
 		039E1BDA2B43F8EF32D43378 /* Pods_TwitterTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689982D956C50D99A6E61DE /* Pods_TwitterTutorial.framework */; };
 		EA0E9A242589D6C800F8E179 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A232589D6C800F8E179 /* Constants.swift */; };
 		EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A262589E1C900F8E179 /* AuthService.swift */; };
+		EA0E9A2A258A0F1D00F8E179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA0E9A29258A0F1D00F8E179 /* GoogleService-Info.plist */; };
 		EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F682574E043001ADFA6 /* AppDelegate.swift */; };
 		EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */; };
 		EAE89F702574E043001ADFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F6E2574E043001ADFA6 /* Main.storyboard */; };
@@ -24,7 +25,6 @@
 		EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9925775494001ADFA6 /* LoginController.swift */; };
 		EAE89F9E2577557C001ADFA6 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F9D2577557C001ADFA6 /* RegistrationController.swift */; };
 		EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89FA225776194001ADFA6 /* Utilities.swift */; };
-		EAE89FA62577933A001ADFA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAE89FA525779339001ADFA6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +33,7 @@
 		9689982D956C50D99A6E61DE /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0E9A232589D6C800F8E179 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA0E9A262589E1C900F8E179 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EA0E9A29258A0F1D00F8E179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAE89F652574E043001ADFA6 /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE89F682574E043001ADFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		EAE89F9925775494001ADFA6 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		EAE89F9D2577557C001ADFA6 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		EAE89FA225776194001ADFA6 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		EAE89FA525779339001ADFA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				EAE89F6E2574E043001ADFA6 /* Main.storyboard */,
 				EAE89F712574E044001ADFA6 /* Assets.xcassets */,
 				EAE89F732574E044001ADFA6 /* LaunchScreen.storyboard */,
-				EAE89FA525779339001ADFA6 /* GoogleService-Info.plist */,
+				EA0E9A29258A0F1D00F8E179 /* GoogleService-Info.plist */,
 				EAE89F762574E044001ADFA6 /* Info.plist */,
 			);
 			path = TwitterTutorial;
@@ -240,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE89F752574E044001ADFA6 /* LaunchScreen.storyboard in Resources */,
-				EAE89FA62577933A001ADFA6 /* GoogleService-Info.plist in Resources */,
+				EA0E9A2A258A0F1D00F8E179 /* GoogleService-Info.plist in Resources */,
 				EAE89F722574E044001ADFA6 /* Assets.xcassets in Resources */,
 				EAE89F702574E043001ADFA6 /* Main.storyboard in Resources */,
 			);
