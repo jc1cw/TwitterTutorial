@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		039E1BDA2B43F8EF32D43378 /* Pods_TwitterTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9689982D956C50D99A6E61DE /* Pods_TwitterTutorial.framework */; };
+		EA0E9A242589D6C800F8E179 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A232589D6C800F8E179 /* Constants.swift */; };
+		EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A262589E1C900F8E179 /* AuthService.swift */; };
 		EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F682574E043001ADFA6 /* AppDelegate.swift */; };
 		EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */; };
 		EAE89F702574E043001ADFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F6E2574E043001ADFA6 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		48383F298C4AF96D8276B4CF /* Pods-TwitterTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.release.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		4A307C6B00998A12547837F3 /* Pods-TwitterTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterTutorial.debug.xcconfig"; path = "Target Support Files/Pods-TwitterTutorial/Pods-TwitterTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		9689982D956C50D99A6E61DE /* Pods_TwitterTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0E9A232589D6C800F8E179 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA0E9A262589E1C900F8E179 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EAE89F652574E043001ADFA6 /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE89F682574E043001ADFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,6 @@
 				4A307C6B00998A12547837F3 /* Pods-TwitterTutorial.debug.xcconfig */,
 				48383F298C4AF96D8276B4CF /* Pods-TwitterTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -121,6 +124,7 @@
 			children = (
 				EAE89F9525762393001ADFA6 /* Extensions.swift */,
 				EAE89FA225776194001ADFA6 /* Utilities.swift */,
+				EA0E9A232589D6C800F8E179 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 		EAE89F7E2574E230001ADFA6 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EA0E9A262589E1C900F8E179 /* AuthService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -296,11 +301,13 @@
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
+				EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
 				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
 				EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */,
 				EAE89F9E2577557C001ADFA6 /* RegistrationController.swift in Sources */,
 				EAE89F8A2576123C001ADFA6 /* FeedController.swift in Sources */,
+				EA0E9A242589D6C800F8E179 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
