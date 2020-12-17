@@ -11,6 +11,10 @@
 		EA0E9A242589D6C800F8E179 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A232589D6C800F8E179 /* Constants.swift */; };
 		EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0E9A262589E1C900F8E179 /* AuthService.swift */; };
 		EA0E9A2A258A0F1D00F8E179 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA0E9A29258A0F1D00F8E179 /* GoogleService-Info.plist */; };
+		EA511D29258B382D002D3FF1 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA511D28258B382D002D3FF1 /* CaptionTextView.swift */; };
+		EA8D0429258AF27E0035B87A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D0428258AF27E0035B87A /* UserService.swift */; };
+		EA8D042C258AF7E40035B87A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D042B258AF7E40035B87A /* User.swift */; };
+		EA8D0452258B20820035B87A /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D0451258B20820035B87A /* UploadTweetController.swift */; };
 		EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F682574E043001ADFA6 /* AppDelegate.swift */; };
 		EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */; };
 		EAE89F702574E043001ADFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE89F6E2574E043001ADFA6 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		EA0E9A232589D6C800F8E179 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA0E9A262589E1C900F8E179 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EA0E9A29258A0F1D00F8E179 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA511D28258B382D002D3FF1 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		EA8D0428258AF27E0035B87A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EA8D042B258AF7E40035B87A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA8D0451258B20820035B87A /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		EAE89F652574E043001ADFA6 /* TwitterTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAE89F682574E043001ADFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAE89F6A2574E043001ADFA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				EA0E9A262589E1C900F8E179 /* AuthService.swift */,
+				EA8D0428258AF27E0035B87A /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -146,6 +155,7 @@
 				EAE89F8C257612BD001ADFA6 /* ExploreController.swift */,
 				EAE89F8F257612D7001ADFA6 /* NotificationsController.swift */,
 				EAE89F92257612EF001ADFA6 /* ConversationsController.swift */,
+				EA8D0451258B20820035B87A /* UploadTweetController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -160,6 +170,7 @@
 		EAE89F822574E245001ADFA6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA511D28258B382D002D3FF1 /* CaptionTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 		EAE89F832574E26B001ADFA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA8D042B258AF7E40035B87A /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,13 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8D0429258AF27E0035B87A /* UserService.swift in Sources */,
 				EAE89F90257612D7001ADFA6 /* NotificationsController.swift in Sources */,
+				EA511D29258B382D002D3FF1 /* CaptionTextView.swift in Sources */,
 				EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */,
 				EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
 				EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */,
+				EA8D0452258B20820035B87A /* UploadTweetController.swift in Sources */,
+				EA8D042C258AF7E40035B87A /* User.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
 				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
 				EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */,
