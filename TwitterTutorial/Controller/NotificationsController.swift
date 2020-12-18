@@ -9,16 +9,16 @@ import UIKit
 
 class NotificationsController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
-    //MARK: - LifeCycle
+    // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
-    //MARK: - Helpers
+    // MARK: - Helpers
     
     func configureUI() {
         view.backgroundColor = .white
