@@ -38,6 +38,7 @@
 		EAF9A5F22590554B0005CB3D /* ProfileFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5F12590554B0005CB3D /* ProfileFilterView.swift */; };
 		EAF9A5F5259057EC0005CB3D /* ProfileFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5F4259057EC0005CB3D /* ProfileFilterCell.swift */; };
 		EAF9A5F825906E110005CB3D /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5F725906E110005CB3D /* ProfileHeaderViewModel.swift */; };
+		EAF9A5FB2591B0040005CB3D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5FA2591B0040005CB3D /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		EAF9A5F12590554B0005CB3D /* ProfileFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterView.swift; sourceTree = "<group>"; };
 		EAF9A5F4259057EC0005CB3D /* ProfileFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFilterCell.swift; sourceTree = "<group>"; };
 		EAF9A5F725906E110005CB3D /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		EAF9A5FA2591B0040005CB3D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				EA9C0AE9258C9CC900CF555A /* ProfileHeader.swift */,
 				EAF9A5F12590554B0005CB3D /* ProfileFilterView.swift */,
 				EAF9A5F4259057EC0005CB3D /* ProfileFilterCell.swift */,
+				EAF9A5FA2591B0040005CB3D /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				EA511D29258B382D002D3FF1 /* CaptionTextView.swift in Sources */,
 				EAF9A5F5259057EC0005CB3D /* ProfileFilterCell.swift in Sources */,
 				EAE89F93257612EF001ADFA6 /* ConversationsController.swift in Sources */,
+				EAF9A5FB2591B0040005CB3D /* UserCell.swift in Sources */,
 				EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
