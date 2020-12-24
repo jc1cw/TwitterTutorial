@@ -41,6 +41,7 @@
 		EAF9A5FB2591B0040005CB3D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5FA2591B0040005CB3D /* UserCell.swift */; };
 		EAF9A5FE259304520005CB3D /* TweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A5FD259304520005CB3D /* TweetController.swift */; };
 		EAF9A601259306930005CB3D /* TweetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A600259306930005CB3D /* TweetHeader.swift */; };
+		EAF9A604259437D50005CB3D /* UploadTweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A603259437D50005CB3D /* UploadTweetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		EAF9A5FA2591B0040005CB3D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		EAF9A5FD259304520005CB3D /* TweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetController.swift; sourceTree = "<group>"; };
 		EAF9A600259306930005CB3D /* TweetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetHeader.swift; sourceTree = "<group>"; };
+		EAF9A603259437D50005CB3D /* UploadTweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				EA9C0AE3258C83F300CF555A /* TweetViewModel.swift */,
 				EAF9A5F725906E110005CB3D /* ProfileHeaderViewModel.swift */,
+				EAF9A603259437D50005CB3D /* UploadTweetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAF9A5FE259304520005CB3D /* TweetController.swift in Sources */,
 				EA9C0AE7258C924600CF555A /* ProfileController.swift in Sources */,
+				EAF9A604259437D50005CB3D /* UploadTweetViewModel.swift in Sources */,
 				EA9C0AEA258C9CC900CF555A /* ProfileHeader.swift in Sources */,
 				EA9C0AE1258C618300CF555A /* TweetCell.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
