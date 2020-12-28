@@ -45,6 +45,9 @@
 		EAF9A607259459A40005CB3D /* ActionSheetLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A606259459A40005CB3D /* ActionSheetLauncher.swift */; };
 		EAF9A60A25946A840005CB3D /* ActionSheetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A60925946A840005CB3D /* ActionSheetCell.swift */; };
 		EAF9A60D259475F70005CB3D /* ActionSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A60C259475F70005CB3D /* ActionSheetViewModel.swift */; };
+		EAF9A6102599AB280005CB3D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A60F2599AB280005CB3D /* Notification.swift */; };
+		EAF9A6132599ADBC0005CB3D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A6122599ADBC0005CB3D /* NotificationService.swift */; };
+		EAF9A6162599C9F50005CB3D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A6152599C9F50005CB3D /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +93,9 @@
 		EAF9A606259459A40005CB3D /* ActionSheetLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetLauncher.swift; sourceTree = "<group>"; };
 		EAF9A60925946A840005CB3D /* ActionSheetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetCell.swift; sourceTree = "<group>"; };
 		EAF9A60C259475F70005CB3D /* ActionSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetViewModel.swift; sourceTree = "<group>"; };
+		EAF9A60F2599AB280005CB3D /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		EAF9A6122599ADBC0005CB3D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		EAF9A6152599C9F50005CB3D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 				EA0E9A262589E1C900F8E179 /* AuthService.swift */,
 				EA8D0428258AF27E0035B87A /* UserService.swift */,
 				EA9C0ADA258C504600CF555A /* TweetService.swift */,
+				EAF9A6122599ADBC0005CB3D /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 				EAF9A5FA2591B0040005CB3D /* UserCell.swift */,
 				EAF9A600259306930005CB3D /* TweetHeader.swift */,
 				EAF9A60925946A840005CB3D /* ActionSheetCell.swift */,
+				EAF9A6152599C9F50005CB3D /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 			children = (
 				EA8D042B258AF7E40035B87A /* User.swift */,
 				EA9C0ADD258C555C00CF555A /* Tweet.swift */,
+				EAF9A60F2599AB280005CB3D /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,16 +380,19 @@
 				EA9C0AEA258C9CC900CF555A /* ProfileHeader.swift in Sources */,
 				EA9C0AE1258C618300CF555A /* TweetCell.swift in Sources */,
 				EAE89F8D257612BD001ADFA6 /* ExploreController.swift in Sources */,
+				EAF9A6102599AB280005CB3D /* Notification.swift in Sources */,
 				EA0E9A272589E1C900F8E179 /* AuthService.swift in Sources */,
 				EAF9A5F825906E110005CB3D /* ProfileHeaderViewModel.swift in Sources */,
 				EA8D0452258B20820035B87A /* UploadTweetController.swift in Sources */,
 				EA8D042C258AF7E40035B87A /* User.swift in Sources */,
 				EAE89F6B2574E043001ADFA6 /* SceneDelegate.swift in Sources */,
 				EAE89F872574E52D001ADFA6 /* MainTabController.swift in Sources */,
+				EAF9A6132599ADBC0005CB3D /* NotificationService.swift in Sources */,
 				EAE89F9A25775495001ADFA6 /* LoginController.swift in Sources */,
 				EAF9A601259306930005CB3D /* TweetHeader.swift in Sources */,
 				EA9C0AE4258C83F300CF555A /* TweetViewModel.swift in Sources */,
 				EAF9A60D259475F70005CB3D /* ActionSheetViewModel.swift in Sources */,
+				EAF9A6162599C9F50005CB3D /* NotificationCell.swift in Sources */,
 				EAE89F9E2577557C001ADFA6 /* RegistrationController.swift in Sources */,
 				EAE89F8A2576123C001ADFA6 /* FeedController.swift in Sources */,
 				EAF9A5F22590554B0005CB3D /* ProfileFilterView.swift in Sources */,
