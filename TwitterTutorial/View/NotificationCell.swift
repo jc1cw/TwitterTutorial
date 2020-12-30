@@ -7,9 +7,19 @@
 
 import UIKit
 
+protocol NotificationCellDelegate: class {
+    func didTapProfileImage(_ cell: NotificationCell)
+}
+
 class NotificationCell: UITableViewCell {
     
     // MARK: - Properties
+    
+    var notification: Notification? {
+        didSet { configure() }
+    }
+    
+    weak var delegate: NotificationCellDelegate?
     
     private lazy var profileImageView: UIImageView = {
         let iv = UIImageView()
@@ -30,7 +40,6 @@ class NotificationCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 2
         label.font = UIFont.systemFont(ofSize: 14)
-        label.text = "some test notificaiton message"
         return label
     }()
     
@@ -55,6 +64,16 @@ class NotificationCell: UITableViewCell {
     // MARK: - Selector
     
     @objc func handleProfileImageTapped() {
+        delegate?.didTapProfileImage(self)
+    }
+    
+    // MARK: - Helpers
+    
+    func configure() {
+        guard let notification = notification else { return }
+        let viewModel = NotificationViewModel(notification: notification)
         
+        profileImageView.sd_setImage(with: viewModel.pofileImageUrl)
+        notificationLabel.attributedText = viewModel.notificationText
     }
 }

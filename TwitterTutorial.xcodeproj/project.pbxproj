@@ -48,6 +48,7 @@
 		EAF9A6102599AB280005CB3D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A60F2599AB280005CB3D /* Notification.swift */; };
 		EAF9A6132599ADBC0005CB3D /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A6122599ADBC0005CB3D /* NotificationService.swift */; };
 		EAF9A6162599C9F50005CB3D /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A6152599C9F50005CB3D /* NotificationCell.swift */; };
+		EAF9A619259C3E010005CB3D /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9A618259C3E010005CB3D /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		EAF9A60F2599AB280005CB3D /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		EAF9A6122599ADBC0005CB3D /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		EAF9A6152599C9F50005CB3D /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		EAF9A618259C3E010005CB3D /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				EAF9A5F725906E110005CB3D /* ProfileHeaderViewModel.swift */,
 				EAF9A603259437D50005CB3D /* UploadTweetViewModel.swift */,
 				EAF9A60C259475F70005CB3D /* ActionSheetViewModel.swift */,
+				EAF9A618259C3E010005CB3D /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				EAE89FA325776194001ADFA6 /* Utilities.swift in Sources */,
 				EAF9A60A25946A840005CB3D /* ActionSheetCell.swift in Sources */,
 				EAE89F692574E043001ADFA6 /* AppDelegate.swift in Sources */,
+				EAF9A619259C3E010005CB3D /* NotificationViewModel.swift in Sources */,
 				EAE89F9625762393001ADFA6 /* Extensions.swift in Sources */,
 				EAF9A5FE259304520005CB3D /* TweetController.swift in Sources */,
 				EA9C0AE7258C924600CF555A /* ProfileController.swift in Sources */,
