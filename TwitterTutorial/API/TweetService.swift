@@ -22,7 +22,7 @@ struct TweetService {
         
         switch type {
         case .tweet:
-            REF_TWEETS.updateChildValues(values) { (error, ref) in
+            REF_TWEETS.childByAutoId().updateChildValues(values) { (error, ref) in
                 // update user-tweet structure after tweet upload completes
                 guard let tweetID = ref.key else { return }
                 REF_USER_TWEETS.child(uid).updateChildValues([tweetID : 1], withCompletionBlock: completion)
@@ -41,14 +41,25 @@ struct TweetService {
     
     func fetchTweets(completion: @escaping([Tweet]) -> Void) {
         var tweets = [Tweet]()
+        guard let currentUid = Auth.auth().currentUser?.uid else { return }
         
-        REF_TWEETS.observe(.childAdded) { snapshot in
-            guard let dictionary = snapshot.value as? [String: Any] else { return }
-            guard let uid = dictionary["uid"] as? String else { return }
+        REF_USER_FOLLOWING.child(currentUid).observe(.childAdded) { snapshot in
+            let followingUid = snapshot.key
+            
+            REF_USER_TWEETS.child(followingUid).observe(.childAdded) { snapshot in
+                let tweetID = snapshot.key
+                
+                self.fetchTweet(withTweetID: tweetID) { tweet in
+                    tweets.append(tweet)
+                    completion(tweets)
+                }
+            }
+        }
+        
+        REF_USER_TWEETS.child(currentUid).observe(.childAdded) { snapshot in
             let tweetID = snapshot.key
-           
-            UserService.shared.fetchUser(uid: uid) { user in
-                let tweet = Tweet(user: user, tweetID: tweetID, dictionary: dictionary)
+            
+            self.fetchTweet(withTweetID: tweetID) { tweet in
                 tweets.append(tweet)
                 completion(tweets)
             }
@@ -89,10 +100,11 @@ struct TweetService {
             REF_TWEET_REPLIES.child(tweetKey).child(replyKey).observeSingleEvent(of: .value) { snapshot in
                 guard let dictionary = snapshot.value as? [String: Any] else { return }
                 guard let uid = dictionary["uid"] as? String else { return }
+                let replyID = snapshot.key
                 
                 UserService.shared.fetchUser(uid: uid) { user in
-                    let tweet = Tweet(user: user, tweetID: tweetKey, dictionary: dictionary)
-                    replies.append(tweet)
+                    let reply = Tweet(user: user, tweetID: replyID, dictionary: dictionary)
+                    replies.append(reply)
                     completion(replies)
                 }
             }

@@ -183,8 +183,8 @@
 			children = (
 				EA0E9A262589E1C900F8E179 /* AuthService.swift */,
 				EA8D0428258AF27E0035B87A /* UserService.swift */,
-				EA9C0ADA258C504600CF555A /* TweetService.swift */,
 				EAF9A6122599ADBC0005CB3D /* NotificationService.swift */,
+				EA9C0ADA258C504600CF555A /* TweetService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
